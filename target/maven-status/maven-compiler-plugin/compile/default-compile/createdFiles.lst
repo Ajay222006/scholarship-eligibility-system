@@ -1,0 +1,4 @@
+model\Student.class
+service\ScholarshipService.class
+ScholarshipApplication.class
+controller\ScholarshipController.class

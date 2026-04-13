@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scholarship-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: scholarship
+  template:
+    metadata:
+      labels:
+        app: scholarship
+    spec:
+      containers:
+      - name: scholarship-container
+        image: scholarship-app
+        ports:
+        - containerPort: 8080
